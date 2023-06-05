@@ -1,0 +1,35 @@
+$primary-color: pink;
+$secondary-color: green;
+
+.login-form {
+  text-align: center;
+  margin: 50px auto;
+  width: 300px;
+  
+  h1 {
+    color: $primary-color;
+    font-size: 24px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid $primary-color;
+    
+    &::placeholder {
+      color: $secondary-color;
+    }
+  }
+  
+  .login-button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
